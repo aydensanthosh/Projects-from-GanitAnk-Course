@@ -135,6 +135,6 @@ This is **the beginning of a new era** in my learning journey. Next steps includ
 <br>
 
 <p align="center">
-  <i>Last Updated: December 2025</i>
+  <i>Last Updated: February 2026</i>
 </p>
 
