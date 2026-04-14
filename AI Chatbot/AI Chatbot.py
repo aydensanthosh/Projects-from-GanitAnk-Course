@@ -2,25 +2,18 @@
 import getpass
 import streamlit as st
 import os
-import json
 from dotenv import load_dotenv, find_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.chat_history import InMemoryChatMessageHistory
-from langchain_core.messages import HumanMessage, AIMessage
 load_dotenv(find_dotenv(), override=True)
-
-#Initializing History
-history=InMemoryChatMessageHistory()
-
-#
 
 
 #Calling API Key
+
 if "GOOGLE_API_KEY" not in os.environ:
     os.environ["GOOGLE_API_KEY"] = getpass.getpass("Enter your Google AI API key: ")
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash-lite",
-    temperature=0.3,
+    temperature=0.0,
     max_tokens=None,
     timeout=None,
     max_retries=2,
@@ -49,7 +42,7 @@ if prompt:
         messages = [
     (
         "system",
-        "You are a helpful AI assistant that answers the user question.",
+        "You are a helpful AI assistant that answers the user question in just three lines.",
     ),
     ("human", f"{prompt}"),
     ]
@@ -59,8 +52,3 @@ if prompt:
             st.write(prompt)
         with st.chat_message("assistant"):
             st.write((reply))
-        print(messages)
-        print(reply)
-
-
-    

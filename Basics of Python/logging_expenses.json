@@ -1,0 +1,35 @@
+{
+    "Expenses": [
+        {
+            "Category": "Food",
+            "Amount": 15.0,
+            "Desc": "Samosa"
+        },
+        {
+            "Category": "Food",
+            "Amount": 110.0,
+            "Desc": "Burger"
+        },
+        {
+            "Category": "Travel",
+            "Amount": 60.0,
+            "Desc": "Udhar"
+        },
+        {
+            "Category": "Travel",
+            "Amount": 100.0,
+            "Desc": "Udhar"
+        },
+        {
+            "Category": "Food",
+            "Amount": 36.0,
+            "Desc": "Bhaji Pao"
+        },
+        {
+            "Category": "Travel",
+            "Amount": 90.0,
+            "Desc": "Udhar"
+        }
+    ],
+    "Budget": 1500.0
+}
